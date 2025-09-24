@@ -1,157 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gamer Hub | YourName</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Rajdhani:wght@500&display=swap" rel="stylesheet">
-<style>
-  /* Font & Color Theme */
-body {
-  margin: 0;
-  font-family: 'Rajdhani', sans-serif;
-  background: radial-gradient(circle at top, #0f0c29, #302b63, #24243e);
-  color: #f5f5f5;
-  text-align: center;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background: rgba(0,0,0,0.6);
-}
-
-.logo {
-  font-family: 'Orbitron', sans-serif;
-  color: #00ffe0;
-  text-shadow: 0 0 8px #00ffe0;
-}
-
-nav a {
-  color: #f5f5f5;
-  margin: 0 15px;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-nav a:hover { color: #00ffe0; }
-
-.hero {
-  padding: 80px 20px;
-}
-
-.hero h2 {
-  font-size: 2.5rem;
-  text-shadow: 0 0 10px #00ffe0;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 25px;
-  background: #00ffe0;
-  color: #0f0c29;
-  font-weight: bold;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px #00ffe0;
-}
-
-section {
-  padding: 60px 20px;
-}
-
-.cards {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.card {
-  background: rgba(255,255,255,0.05);
-  padding: 20px;
-  width: 150px;
-  border: 2px solid #00ffe0;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #00ffe0;
-}
-
-.social-links a {
-  display: inline-block;
-  margin: 10px 15px;
-  padding: 10px 20px;
-  background: #00ffe0;
-  color: #0f0c29;
-  border-radius: 20px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: transform 0.2s;
-}
-
-.social-links a:hover {
-  transform: scale(1.1);
-}
-
-footer {
-  padding: 20px;
-  background: rgba(0,0,0,0.6);
-  font-size: 0.9rem;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Portfolio | Your Name</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1 class="logo">⚡ YourName ⚡</h1>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="container">
+    <h1 class="logo">Your Name</h1>
     <nav>
       <a href="#about">About</a>
-      <a href="#games">Games</a>
-      <a href="#socials">Socials</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <section class="hero">
-    <h2>Welcome to My Gaming World</h2>
-    <p>Streamer • FPS Addict • RPG Explorer</p>
-    <a href="#socials" class="btn">Join the Squad</a>
-  </section>
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="container">
+    <h2>Hello, I'm <span>Your Name</span></h2>
+    <p>A passionate student ready to explore opportunities and showcase projects.</p>
+  </div>
+</section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hey, I’m YourName. Competitive gamer and casual content creator.  
-       I love speed-runs, open world RPGs, and late-night co-op missions.  
-       Catch me on Twitch or challenge me on Steam!</p>
-  </section>
+<!-- ===== ABOUT ===== -->
+<section id="about" class="container section">
+  <h2>About Me</h2>
+  <p>
+    I am a [Your Course/Major] student with interests in [skills/interests].
+    I love learning new technologies and creating meaningful projects.
+  </p>
+</section>
 
-  <section id="games">
-    <h2>Favorite Games</h2>
-    <div class="cards">
-      <div class="card">🎯 Valorant</div>
-      <div class="card">🛡️ Elden Ring</div>
-      <div class="card">🚀 Starfield</div>
-    </div>
-  </section>
+<!-- ===== GALLERY ===== -->
+<section id="gallery" class="container section">
+  <h2>Gallery</h2>
+  <div class="grid">
+    <img src="images/photo1.jpg" alt="Project 1">
+    <img src="images/photo2.jpg" alt="Project 2">
+    <img src="images/photo3.jpg" alt="Project 3">
+    <img src="images/photo4.jpg" alt="Project 4">
+  </div>
+</section>
 
-  <section id="socials">
-    <h2>Follow Me</h2>
-    <div class="social-links">
-      <a href="https://twitch.tv/yourname" target="_blank">Twitch</a>
-      <a href="https://youtube.com/yourname" target="_blank">YouTube</a>
-      <a href="https://twitter.com/yourname" target="_blank">Twitter</a>
-      <a href="https://discord.gg/yourserver" target="_blank">Discord</a>
-    </div>
-  </section>
+<!-- ===== RESUME ===== -->
+<section id="resume" class="container section">
+  <h2>Resume</h2>
+  <p>Click below to view or download my resume:</p>
+  <a class="btn" href="Your_Resume.pdf" target="_blank">📄 View Resume</a>
+</section>
 
-  <footer>
-    <p>© 2025 YourName | Powered by GitHub Pages</p>
-  </footer>
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="container section">
+  <h2>Contact Me</h2>
+  <p>Feel free to reach out for opportunities or collaborations!</p>
+
+  <!-- Simple Form (Email link or Formspree) -->
+  <form action="https://formspree.io/f/your_form_id" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+
+  <!-- Social Links -->
+  <div class="socials">
+    <a href="https://facebook.com/yourprofile" target="_blank">Facebook</a>
+    <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+    <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a>
+    <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>© 2025 Your Name | Built with ❤️ on GitHub Pages</p>
+</footer>
+
 </body>
 </html>
