@@ -1,75 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="icon.png" type="image/x-icon">
-  <title>My Web Page</title>
-  <link rel="stylesheet" href="css/midterm.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <title>About Me</title>
+    <link rel="stylesheet" href="css/midterm.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-  <style>
-    /* Dropdown menu styling */
-    nav {
-      position: relative;
-      display: flex;
-      gap: 20px;
-      align-items: center;
+<style>
+    body {
+        background-color: #D3D3D3;
+         
+    }
+    h3 {
+        color: #09553e;
+        text-align: justify;
+    }
+    h1 {
+        font-family: 'Poppins', sans-serif;
+    }
+    div {
+        color: teal;
+        text-align: justify;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'ssTrebuchet MS', sans-serif;
+        font-size: 12pt;
+    }
+    p {
+        color: #09553e;
+        text-align: justify;
+        font-size: 120%;
+    }
+    img {
+        display: block;
+        margin: auto;
+        width: 10%;
+    }
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+    header nav a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300; /* bold like in gallery */
+  text-transform: none; /* remove auto uppercase if applied */
+    }
+.content {
+      text-align: center;
+      color: #09553e;
+      margin: 80px auto;
+      max-width: 800px;
+      padding: 20px;
     }
 
-    nav a {
-      text-decoration: none;
-      color: black;
-      font-weight: 600;
-      padding: 8px 12px;
-      transition: 0.3s;
-    }
+</style>
 
-    nav a:hover {
-      color: #0077cc;
-    }
-
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: white;
-      min-width: 150px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      z-index: 1;
-      border-radius: 6px;
-      overflow: hidden;
-    }
-
-    .dropdown-content a {
-      display: block;
-      color: black;
-      padding: 10px 15px;
-      text-decoration: none;
-      font-weight: 400;
-    }
-
-    .dropdown-content a:hover {
-      background-color: #f2f2f2;
-    }
-
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-  </style>
 </head>
-
 <body>
 
-  <header>
-    <div class="container">
-      <h1 class="logo">Welcome to my Web Page</h1>
-      <nav>
-        <div class="dropdown">
+    <header>
+  <div class="container">
+    <h1 class="logo">About Me</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <div class="dropdown">
           <a href="about.html">About</a>
           <div class="dropdown-content">
             <a href="vision.html">Vision</a>
@@ -77,39 +70,43 @@
             <a href="history.html">History</a>
           </div>
         </div>
-        <a href="gallery.html">Gallery</a>
-        <a href="benauro_resume.html">Resume</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <section class="hero">
-    <div class="container">
-      <img src="img/24.jpg" alt="Carl Marx Benauro">
-      <h2>Hello, I'm <span>Carl Marx</span></h2>
-      <p>A passionate student ready to explore opportunities and showcase projects.</p>
-    </div>
-  </section>
-
-  <section id="about" class="container section">
-    <h2>About Me</h2>
-    <p>
-      I am a Bachelor of Science in Information Technology student with interests in Web Development.
-      I love learning new technologies and creating meaningful projects.
-    </p>
-  </section>
-
-  <div class="socials">
-    <a href="https://facebook.com/camzswangin" target="_blank">Facebook</a>
-    <a href="https://instagram.com/camz.wolf" target="_blank">Instagram</a>
-    <a href="https://threads.com/@camz.wolf" target="_blank">Threads</a>
-    <a href="https://github.com/camzswangin" target="_blank">GitHub</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="benauro_resume.html">Resume</a>
+      <a href="contact">Contact</a>
+    </nav>
   </div>
+</header>
+     <div class="content">
+    <h1>ABOUT ME</h1>
+    <p><b>
+        Hello! I'm Carl Marx Benauro, a driven Information Technology student with a strong foundation in software development and coding principles. My academic focus is complemented by a deep personal interest in building and optimizing systems. When I'm not studying algorithms or debugging code, I'm immersed in competitive gaming, which has honed my skills in strategic thinking, rapid problem-solving, and teamwork. I am actively seeking opportunities to apply my technical knowledge in a real-world coding environment.
+    </b></p>
+    <section>
+        <h2>💻 Programming Languages I Use</h2>
+        <ul>
+            <li>HTML, CSS, and JavaScript</li>
+            <li>Python</li>
+            <li>C / C++</li>
+            <li>Java</li>
+            <li>SQL and PHP (basic web development)</li>
+        </ul>
+    </section>
 
-  <footer>
-    <p>© 2025 Carl Marx Benauro | Built with ❤️ on GitHub Pages</p>
-  </footer>
+    <section>
+        <h2>🎮 Games I Play</h2>
+        <ul>
+            <li>Dota 2</li>
+            <li>Valorant</li>
+            <li>Mobile Legends</li>
+            <li>League of Legends</li>
+            <li>Roblox</li>
+            <li>PUBG</li>
+        </ul>
+    </section>
 
-</body>
+    </body>
 </html>
+
+
+
+
