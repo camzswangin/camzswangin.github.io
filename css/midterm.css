@@ -121,3 +121,40 @@ footer {
   text-align: center;
   padding: 20px 0;
 }
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Hide the dropdown list by default */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:#1e1e2f;
+  min-width: 160px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style dropdown items */
+.dropdown-content li a {
+  color: blue;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Hover effects */
+.dropdown-content li a:hover {
+  background-color: blue;
+}
+
+/* Show dropdown when hovering */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
