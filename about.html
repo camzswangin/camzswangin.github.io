@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="icon.png" type="image/x-icon">
+  <title>My Web Page</title>
+  <link rel="stylesheet" href="css/midterm.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* Dropdown menu styling */
+    nav {
+      position: relative;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: black;
+      font-weight: 600;
+      padding: 8px 12px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #0077cc;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 150px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      z-index: 1;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .dropdown-content a {
+      display: block;
+      color: black;
+      padding: 10px 15px;
+      text-decoration: none;
+      font-weight: 400;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f2f2f2;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <h1 class="logo">Welcome to my Web Page</h1>
+      <nav>
+        <div class="dropdown">
+          <a href="about.html">About</a>
+          <div class="dropdown-content">
+            <a href="vision.html">Vision</a>
+            <a href="mission.html">Mission</a>
+            <a href="history.html">History</a>
+          </div>
+        </div>
+        <a href="gallery.html">Gallery</a>
+        <a href="benauro_resume.html">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <img src="img/24.jpg" alt="Carl Marx Benauro">
+      <h2>Hello, I'm <span>Carl Marx</span></h2>
+      <p>A passionate student ready to explore opportunities and showcase projects.</p>
+    </div>
+  </section>
+
+  <section id="about" class="container section">
+    <h2>About Me</h2>
+    <p>
+      I am a Bachelor of Science in Information Technology student with interests in Web Development.
+      I love learning new technologies and creating meaningful projects.
+    </p>
+  </section>
+
+  <div class="socials">
+    <a href="https://facebook.com/camzswangin" target="_blank">Facebook</a>
+    <a href="https://instagram.com/camz.wolf" target="_blank">Instagram</a>
+    <a href="https://threads.com/@camz.wolf" target="_blank">Threads</a>
+    <a href="https://github.com/camzswangin" target="_blank">GitHub</a>
+  </div>
+
+  <footer>
+    <p>© 2025 Carl Marx Benauro | Built with ❤️ on GitHub Pages</p>
+  </footer>
+
+</body>
+</html>
