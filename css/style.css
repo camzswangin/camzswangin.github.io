@@ -1879,4 +1879,88 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .timeline-text { max-width: 700px; }
 
+
 }
+const secretNumber = Math.floor(Math.random() * 10) + 1;
+
+function checkGuess() {
+    const guess = Number(document.getElementById("guessInput").value);
+    const result = document.getElementById("guessResult");
+
+    if (!guess) {
+        result.textContent = "Please enter a number!";
+        return;
+    }
+
+    if (guess === secretNumber) {
+        result.textContent = "🎉 Correct! Great job!";
+    } else {
+        result.textContent = "❌ Wrong! Try again.";
+    }
+}
+
+
+/* ========== GAME 2: CLICK THE BOX ========== */
+let score = 0;
+let gameRunning = false;
+
+function moveBox() {
+    const box = document.getElementById("clickBox");
+    const containerWidth = 700;
+
+    const x = Math.random() * (containerWidth - 60);
+    const y = Math.random() * 120;
+
+    box.style.left = x + "px";
+    box.style.top = y + "px";
+}
+
+document.getElementById("clickBox").onclick = function () {
+    if (!gameRunning) return;
+    score++;
+    document.getElementById("clickScore").textContent = score;
+    moveBox();
+};
+
+function startClickGame() {
+    score = 0;
+    gameRunning = true;
+    document.getElementById("clickScore").textContent = score;
+
+    moveBox();
+
+    setTimeout(() => {
+        gameRunning = false;
+        alert("Time's up! Your score is: " + score);
+    }, 10000);
+}
+let correctAnswer = 0;
+
+function generateProblem() {
+    let a = Math.floor(Math.random() * 20) + 1;
+    let b = Math.floor(Math.random() * 20) + 1;
+
+    let operators = ["+", "-", "*"];
+    let op = operators[Math.floor(Math.random() * operators.length)];
+
+    if (op === "+") correctAnswer = a + b;
+    if (op === "-") correctAnswer = a - b;
+    if (op === "*") correctAnswer = a * b;
+
+    document.getElementById("mathProblem").textContent = `${a} ${op} ${b} = ?`;
+    document.getElementById("mathAnswer").value = "";
+    document.getElementById("mathResult").textContent = "";
+}
+
+function checkMathAnswer() {
+    const userAns = Number(document.getElementById("mathAnswer").value);
+    const result = document.getElementById("mathResult");
+
+    if (userAns === correctAnswer) {
+        result.textContent = "Correct! 🎉";
+    } else {
+        result.textContent = "Incorrect! Try again.";
+    }
+}
+
+generateProblem();
