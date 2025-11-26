@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="CSS/midterm.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        background-color: #D3D3D3;
+         
+    }
+    h3 {
+        color: #09553e;
+        text-align: justify;
+        
+    }
+    div {
+        color: teal;
+        text-align: justify;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'ssTrebuchet MS', sans-serif;
+        font-size: 12pt;
+    }
+    p {
+        color: #09553e;
+        text-align: center;
+    }
+    img {
+        display: block;
+        margin: auto;
+        width: 10%;
+    }
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+    header nav a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300; 
+  text-transform: none;
+}
+
+</style>
+
+</head>
+<body>
+
+    <header>
+  <div class="container">
+      <h1 class="logo">Portfolio</h1>
+      <nav>
+        <a href="index.html">Home</a>
+            <div class="dropdown">
+            <a href="about.html">About</a>
+            <div class="dropdown-content">
+                <a href="vision.html">Vision</a>
+                <a href="mission.html">Mission</a>
+                <a href="history.html">History</a>
+            </div>
+            </div>
+        <a href="gallery.html">Gallery</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+    <img src="img/resume_pic.png" alt="">
+    <p><b> CARL MARX B. BENAURO </b></p>
+    <p> Mobile Number: 09565248348 </p>
+    <p> Email Address: carlmarxbringasbenauro@yahoo.com</p>
+
+    <div style="
+    max-width: 400px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+">
+
+    <h3 style="
+        color: #09553e;
+        margin-bottom: 10px;
+        font-weight: 600;
+        font-size: 20px;
+    ">
+        Download My Portfolio
+    </h3>
+
+    <p style="color: teal; font-size: 14px; margin-bottom: 20px;">
+        Click the button below to download my full portfolio in PDF format.
+    </p>
+
+    <a href="benauro.pdf.pdf" download
+        style="
+            display: inline-block;
+            background-color: #09553e;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: 0.3s;
+        "
+        onmouseover="this.style.backgroundColor='#0b6e52'"
+        onmouseout="this.style.backgroundColor='#09553e'">
+        📄 Download PDF
+    </a>
+</div>
+<!-- MINI GAMES SECTION -->
+<div style="
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    font-family: 'Poppins';
+">
+
+    <h2 style="text-align:center; color:#09553e; font-weight:600;">Mini Games</h2>
+    <p style="text-align:center; color:teal; margin-top:-10px;">Showcasing my JavaScript coding ability</p>
+
+
+    <!-- ========== GAME 1: NUMBER GUESSING ========== -->
+    <div style="margin-top:30px;">
+        <h3 style="color:#09553e;">🎯 Game 1: Number Guessing Game</h3>
+        <p>Guess the secret number between 1 and 10.</p>
+
+        <input id="guessInput" type="number" min="1" max="10"
+               style="padding:5px; border-radius:6px; border:1px solid #ccc;">
+        <button onclick="checkGuess()" 
+                style="padding:6px 12px; background:#09553e; color:white; border:none; border-radius:6px;">
+            Guess
+        </button>
+
+        <p id="guessResult" style="color:teal; margin-top:10px;"></p>
+    </div>
+
+
+    <hr style="margin:25px 0;">
+
+
+    <!-- ========== GAME 2: CLICK THE BOX ========== -->
+    <div>
+        <h3 style="color:#09553e;">🟩 Game 2: Click the Moving Box</h3>
+        <p>Click the green box as many times as you can in 10 seconds!</p>
+
+        <div id="clickBox" 
+             style="width:60px; height:60px; background:#0b6e52; position:relative; cursor:pointer; border-radius:8px;">
+        </div>
+
+        <p>Score: <span id="clickScore">0</span></p>
+        <button onclick="startClickGame()" 
+                style="padding:6px 12px; background:#09553e; color:white; border:none; border-radius:6px;">
+            Start Game
+        </button>
+    </div>
+
+
+    <hr style="margin:25px 0;">
+    <!-- ========== GAME 3: CALCULATOR GAME ========== -->
+    <div>
+        <h3 style="color:#09553e;">🧮 Game 3: Calculator Challenge</h3>
+        <p>Solve the math problem!</p>
+
+        <p id="mathProblem" style="font-size:18px; font-weight:600; color:#09553e;"></p>
+
+        <input id="mathAnswer" type="number"
+               style="padding:5px; border-radius:6px; border:1px solid #ccc;">
+        <button onclick="checkMathAnswer()" 
+                style="padding:6px 12px; background:#09553e; color:white; border:none; border-radius:6px;">
+            Submit Answer
+        </button>
+
+        <p id="mathResult" style="color:teal; margin-top:10px;"></p>
+
+        <button onclick="generateProblem()"
+                style="padding:6px 12px; background:#0b6e52; color:white; border:none; border-radius:6px; margin-top:10px;">
+            New Problem
+        </button>
+    </div>
+
+</div>
+ <div class="socials">
+    <a href="https://facebook.com/camzswangin" target="_blank">Facebook</a>
+    <a href="https://instagram.com/camz.wolf" target="_blank">Instagram</a>
+    <a href="https://threads.com/@camz.wolf" target="_blank">Threads</a>
+    <a href="https://github.com/camzswangin" target="_blank">GitHub</a>
+  </div>
+
+  <footer>
+    <p>© 2025 Carl Marx Benauro | Built with ❤️ on GitHub Pages</p>
+  </footer>
+<!-- ===================== JAVASCRIPT FOR GAMES ===================== -->
+<script>
+/* ========== GAME 1: NUMBER GUESSING ========== */
+const secretNumber = Math.floor(Math.random() * 10) + 1;
+
+function checkGuess() {
+    const guess = Number(document.getElementById("guessInput").value);
+    const result = document.getElementById("guessResult");
+
+    if (!guess) {
+        result.textContent = "Please enter a number!";
+        return;
+    }
+
+    if (guess === secretNumber) {
+        result.textContent = "🎉 Correct! Great job!";
+    } else {
+        result.textContent = "❌ Wrong! Try again.";
+    }
+}
+
+
+/* ========== GAME 2: CLICK THE BOX ========== */
+let score = 0;
+let gameRunning = false;
+
+function moveBox() {
+    const box = document.getElementById("clickBox");
+    const containerWidth = 700;
+
+    const x = Math.random() * (containerWidth - 60);
+    const y = Math.random() * 120;
+
+    box.style.left = x + "px";
+    box.style.top = y + "px";
+}
+
+document.getElementById("clickBox").onclick = function () {
+    if (!gameRunning) return;
+    score++;
+    document.getElementById("clickScore").textContent = score;
+    moveBox();
+};
+
+function startClickGame() {
+    score = 0;
+    gameRunning = true;
+    document.getElementById("clickScore").textContent = score;
+
+    moveBox();
+
+    setTimeout(() => {
+        gameRunning = false;
+        alert("Time's up! Your score is: " + score);
+    }, 10000);
+}
+let correctAnswer = 0;
+
+function generateProblem() {
+    let a = Math.floor(Math.random() * 20) + 1;
+    let b = Math.floor(Math.random() * 20) + 1;
+
+    let operators = ["+", "-", "*"];
+    let op = operators[Math.floor(Math.random() * operators.length)];
+
+    if (op === "+") correctAnswer = a + b;
+    if (op === "-") correctAnswer = a - b;
+    if (op === "*") correctAnswer = a * b;
+
+    document.getElementById("mathProblem").textContent = `${a} ${op} ${b} = ?`;
+    document.getElementById("mathAnswer").value = "";
+    document.getElementById("mathResult").textContent = "";
+}
+
+function checkMathAnswer() {
+    const userAns = Number(document.getElementById("mathAnswer").value);
+    const result = document.getElementById("mathResult");
+
+    if (userAns === correctAnswer) {
+        result.textContent = "Correct! 🎉";
+    } else {
+        result.textContent = "Incorrect! Try again.";
+    }
+}
+
+generateProblem();
+
+</script>
+
